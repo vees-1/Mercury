@@ -14,7 +14,8 @@
 ## 🔹 Executive Summary
 
 **MERCURY** is a **low-latency, hybrid recommendation system** built to solve one of the hardest real-world machine learning problems:  
-👉 **Cold-start users and products in ecommerce**.
+
+**Cold-start users and products in ecommerce**.⚡
 
 Traditional collaborative filtering systems collapse when historical interaction data is missing.  
 MERCURY avoids this failure mode by using a **Two-Tower Neural Network** to generate semantic embeddings from **item metadata and user context**, enabling relevant recommendations from the very first interaction.
