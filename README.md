@@ -58,13 +58,13 @@ This approach allows NOVA to generate meaningful recommendations from the very f
 
 ## 🔹 Architecture Components
 
-### 🔹 Model (Offline)
+### 🔹 Model 
 - Two-Tower Neural Network (User Tower + Item Tower)
 - PyTorch-based training
 - Text embeddings from product descriptions
 - Outputs fixed-size vectors for users and items
 
-### 🔹 Retrieval (Online)
+### 🔹 Retrieval
 - FAISS in-memory vector index
 - Dot-product similarity search
 - Optimized for low-latency top-K retrieval
