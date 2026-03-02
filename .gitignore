@@ -22,7 +22,6 @@ env/
 
 # Models & large files
 *.npy
-*.index
 *.pkl
 *.pt
 *.pth
