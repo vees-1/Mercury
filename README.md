@@ -1,4 +1,4 @@
-# NOVA 🌌
+# NOVA
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
@@ -44,12 +44,6 @@ This project is currently under active development as part of a 6-month ML engin
 | Evaluation framework | ⏳ Planned |
 | FastAPI serving layer | ⏳ Planned |
 | Demo dashboard | ⏳ Planned |
-
----
-
-## Project Context
-
-The motivation is a recurring client pain point: small Shopify stores struggle with product discovery for new users, leading to high bounce rates on landing and collection pages. NOVA is designed to be lightweight enough to run on modest infrastructure while still providing meaningful recommendations from the very first session.
 
 ---
 
