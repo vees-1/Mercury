@@ -637,7 +637,7 @@ with tab3:
 
     if st.checkbox("Show example product IDs", key="show_examples"):
         sample = metadata.groupby("category_en").first().reset_index()[["product_id", "category_en"]].head(10)
-        st.dataframe(sample, use_container_width=True, hide_index=True)
+        st.dataframe(sample.reset_index(drop=True), use_container_width=True)
 
     if pid_input and find_btn:
         if pid_input not in pid_to_idx:
