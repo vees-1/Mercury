@@ -1,4 +1,4 @@
-#  NOVA
+#  N.O.V.A.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B.svg)](https://cqnvutni5v6hneidbuvwvc.streamlit.app/)
@@ -6,7 +6,7 @@
 
 Neural Object-Vector Architecture
 
-Cold-start recommendation system for ecommerce. Surfaces relevant products from the first visit no purchase history needed.
+Cold-start recommendation system for ecommerce. Surfaces relevant products from the first visit — no purchase history needed.
 
 ---
 
@@ -30,7 +30,7 @@ Evaluated using leave-one-out on 2,000 real customer purchase sequences, benchma
 | Median Latency | — | — | 0.67ms |
 | p99 Latency | — | — | 1.96ms |
 
-**62.5% improvement** in NDCG@10 over the popularity baseline. Coverage jumps from 4% to 79% — meaning NOVA actually surfaces the long tail of the catalog instead of recommending the same top products to everyone.
+*62.5% improvement* in NDCG@10 over the popularity baseline. Coverage jumps from 4% to 79% — meaning NOVA actually surfaces the long tail of the catalog instead of recommending the same top products to everyone.
 
 ---
 
@@ -69,41 +69,6 @@ Where `w` is interaction weight: view=0.1, cart add=0.3, purchase=1.0. The syste
 
 ---
 
-## Running Locally
-
-```bash
-git clone https://github.com/vees-1/Nova.git
-cd Nova
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-**Dashboard**
-```bash
-streamlit run dashboard/app.py
-```
-
-**API** (auto-docs at `/docs`)
-```bash
-uvicorn api.main:app --reload
-```
-
----
-
-## API Endpoints
-
-| Endpoint | Method | Description |
-|---|---|---|
-| `/recommend` | POST | Recommend from a raw vector |
-| `/recommend/product` | POST | Similar products by product ID |
-| `/recommend/category` | POST | Cold-start by category |
-| `/recommend/query` | POST | Semantic text search |
-| `/interact` | POST | Update session vector from interaction |
-| `/health` | GET | Index status and product count |
-
----
-
 ## Dashboard
 
 Four interactive tabs:
@@ -115,25 +80,6 @@ Four interactive tabs:
 
 ---
 
-## Tech Stack
-
-| Layer | Tools |
-|---|---|
-| Embeddings | `sentence-transformers` · `all-MiniLM-L6-v2` · `384 dims` |
-| Vector Search | `faiss-cpu` · `IndexFlatIP` · `exact cosine similarity` |
-| API | `FastAPI` · `Pydantic` · `uvicorn` |
-| Dashboard | `Streamlit` |
-| Data | `pandas` · `numpy` · `scikit-learn` |
-
----
-
-## Dataset
-
-[Olist Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — publicly available on Kaggle. Raw data is not included in this repo. Download and place in `data/raw/` before running the notebooks.
-
----
-
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
-
