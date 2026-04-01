@@ -1,10 +1,10 @@
-#  N.O.V.A.
+#  N O V A
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B.svg)](https://cqnvutni5v6hneidbuvwvc.streamlit.app/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Neural Object-Vector Architecture
+Neural Object Vector Architecture
 
 Cold-start recommendation system for ecommerce. Surfaces relevant products from the first visit — no purchase history needed.
 
